@@ -1,4 +1,4 @@
-import { MostrarPrecio, MostrarCantidad } from "./totalizador.js";
+import { MostrarPrecio, MostrarCantidad,MostrarEstado } from "./totalizador.js";
 
 describe("Totalizador", () => {
   it("Debería mostrar el precio", () => {
@@ -7,5 +7,8 @@ describe("Totalizador", () => {
 
   it("Debería mostrar la cantidad de ítems", () => {
     expect(MostrarCantidad(5)).toEqual(5);
+  });
+  it("Debería mostrar estado", () => {
+    expect(MostrarCantidad('UT')).toEqual("UT");
   });
 });
