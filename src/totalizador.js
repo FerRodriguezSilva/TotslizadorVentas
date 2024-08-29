@@ -1,4 +1,10 @@
-function MostrarPrecio(precio){
+function MostrarPrecio(precio) {
     return precio;
-}
-export default MostrarPrecio;
+  }
+  
+  function MostrarCantidad(cantidad) {
+    return cantidad;
+  }
+  
+  export { MostrarPrecio, MostrarCantidad };
+  
