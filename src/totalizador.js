@@ -1,4 +1,4 @@
-function MostrarPrecio(precio) {
+function MostrarPrecioUnitario(precio) {
     return precio;
   }
   
@@ -9,5 +9,11 @@ function MostrarPrecio(precio) {
     return estado;
   }
   
-  export { MostrarPrecio, MostrarCantidad,MostrarEstado };
+  function MostrarPrecioNeto(precio,cantidad) {
+    let precioNeto;
+    precioNeto=precio*cantidad;
+    return precioNeto;
+  }
+
+  export { MostrarPrecioUnitario, MostrarCantidad,MostrarEstado,MostrarPrecioNeto };
   
